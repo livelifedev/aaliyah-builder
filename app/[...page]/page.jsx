@@ -5,12 +5,6 @@ import { RenderBuilderContent } from "../../components/builder";
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
 export default async function Page(props) {
-  if (window.location.pathname === "/e-book-download") {
-    if (sessionStorage.getItem("userSubmitted") !== "true") {
-      window.location.assign("/build-confidence");
-    }
-  }
-
   const content = await builder
     // Get the page content from Builder with the specified options
     .get("page", {
