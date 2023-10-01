@@ -1,21 +1,9 @@
-import Head from "next/head";
-import localFont from "@next/font/local";
 import styles from "./styles/Home.module.css";
 import ContactForm from "../components/ContactForm/ContactForm";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Aaliyah Rubio</title>
-        <meta
-          name="description"
-          content="Aaliyah Rubio - Holistic therapy positive psychology coach"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <div className={styles.layout}>
         <div className={styles.logoBar}>
           <img src="/images/aaliyah-logo.png" alt="" width="100px" />

@@ -1,5 +1,7 @@
+import Head from "next/head";
+import localFont from "next/font/local";
+import { Hammersmith_One, Poppins } from "next/font/google";
 import "./globals.css";
-import { Hammersmith_One, Poppins } from "@next/font/google";
 
 const breathing = localFont({
   src: "../fonts/Breathing.ttf",
@@ -25,6 +27,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Aaliyah Rubio</title>
+        <meta
+          name="description"
+          content="Aaliyah Rubio - Holistic therapy positive psychology coach"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body
         className={[
           hammersmithOne.variable,
