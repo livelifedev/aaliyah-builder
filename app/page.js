@@ -3,34 +3,11 @@ import localFont from "@next/font/local";
 import styles from "./styles/Home.module.css";
 import ContactForm from "../components/ContactForm/ContactForm";
 
-import { Hammersmith_One, Poppins } from "@next/font/google";
-const breathing = localFont({
-  src: "../fonts/Breathing.ttf",
-  variable: "--primary-font",
-});
-const hammersmithOne = Hammersmith_One({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--secondary-font",
-});
-const poppins = Poppins({
-  weight: ["400", "600"],
-  style: ["italic", "normal"],
-  subsets: ["latin"],
-  variable: "--tertiary-font",
-});
-
 export default function Home() {
   return (
-    <div
-      className={[
-        hammersmithOne.variable,
-        poppins.variable,
-        breathing.variable,
-      ].join(" ")}
-    >
+    <>
       <Head>
-        <title>Aaliyah Rubio | Contact</title>
+        <title>Aaliyah Rubio</title>
         <meta
           name="description"
           content="Aaliyah Rubio - Holistic therapy positive psychology coach"
@@ -81,6 +58,6 @@ export default function Home() {
           <div></div>
         </footer>
       </div>
-    </div>
+    </>
   );
 }
